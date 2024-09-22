@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 230px;
+    background-color: #000000;
+    padding: 24px;
+}
+
+.logo {
+    width: 131px;
+    margin-bottom: 18px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: #ffffff;
+}
+
+.nav-item svg {
+    margin-right: 16px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 23px;
+    padding: 2px;
+}
+
+.user-profile img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.user-profile span {
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+}
+
+.playlist-item {
+    background-color: #181818;
+    border-radius: 4px;
+    padding: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.playlist-item:hover {
+    background-color: #282828;
+}
+
+.playlist-item img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.playlist-item h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.playlist-item p {
+    font-size: 14px;
+    color: #b3b3b3;
+}
